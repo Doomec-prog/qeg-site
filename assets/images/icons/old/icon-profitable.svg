@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- ВЫГОДНЫЕ РЕШЕНИЯ -->
+  <g id="icon-profitable">
+    <path class="animate-path" d="M30 10L50 20V40L30 50L10 40V20L30 10Z" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M30 10V30M30 30L50 20M30 30L10 20" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-fill" d="M30 10L50 20V40L30 50L10 40V20L30 10Z" fill="#00BA00" fill-opacity="0.1"/>
+    <path class="animate-path" d="M25 35L35 25M25 25L35 35" fill="none" stroke="#00BA00" stroke-width="2"/>
+  </g>
+</svg>

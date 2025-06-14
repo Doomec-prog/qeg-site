@@ -1,0 +1,172 @@
+/* Стили для блока "НАШИ РЕШЕНИЯ" */
+.solutions {
+  padding: 80px 0;
+  background-color: #F5F5F5;
+}
+
+.solutions-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Philosopher', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #222;
+  position: relative;
+}
+
+.solutions-title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 4px;
+  background-color: #00BA00;
+  margin: 15px auto 0;
+}
+
+.solutions-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.solution-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.solution-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 186, 0, 0.1), 0 0 15px rgba(0, 186, 0, 0.05);
+}
+
+.solution-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #00BA00;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.solution-card:hover::before {
+  transform: scaleX(1);
+}
+
+.solution-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 25px;
+}
+
+.solution-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #00BA00;
+  stroke-width: 2;
+}
+
+.solution-title {
+  font-family: 'Philosopher', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.solution-text {
+  font-family: 'Futura PT', sans-serif;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.solution-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  border: 2px solid #00BA00;
+  border-radius: 30px;
+  color: #00BA00;
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.solution-btn svg {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.solution-btn:hover {
+  background-color: #00BA00;
+  color: #fff;
+}
+
+.solution-btn:hover svg {
+  transform: translateX(5px);
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .solutions-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .solution-card {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  .solutions {
+    padding: 60px 0;
+  }
+  
+  .solutions-title {
+    font-size: 2rem;
+  }
+  
+  .solution-card {
+    padding: 30px 20px;
+  }
+  
+  .solution-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .solution-title {
+    font-size: 1.3rem;
+  }
+  
+  .solution-text {
+    font-size: 0.95rem;
+  }
+}

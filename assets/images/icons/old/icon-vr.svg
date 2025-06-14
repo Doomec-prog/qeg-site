@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Иконка VR-очков для "Цифровизация" -->
+  <g id="icon-vr">
+    <path class="animate-path" d="M15 30H65V50H15V30Z" fill="none" stroke="#00BA00" stroke-width="2" rx="5" ry="5"/>
+    <path class="animate-path" d="M15 40H65" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M40 30V50" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M20 50C20 55 25 60 30 60C35 60 40 55 40 50" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M60 50C60 55 55 60 50 60C45 60 40 55 40 50" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M25 40C27.7614 40 30 37.7614 30 35C30 32.2386 27.7614 30 25 30" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M55 40C52.2386 40 50 37.7614 50 35C50 32.2386 52.2386 30 55 30" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-fill" d="M15 30H65V50H15V30Z" fill="#00BA00" fill-opacity="0.1"/>
+  </g>
+</svg>

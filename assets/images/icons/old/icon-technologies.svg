@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- ПЕРЕДОВЫЕ ТЕХНОЛОГИИ -->
+  <g id="icon-technologies">
+    <path class="animate-path" d="M15 45L15 15L45 15L45 45L15 45Z" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M20 25L25 30L20 35M30 25L35 30L30 35" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M15 35L45 35" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-fill" d="M15 15L45 15L45 45L15 45L15 15Z" fill="#00BA00" fill-opacity="0.1"/>
+  </g>
+</svg>

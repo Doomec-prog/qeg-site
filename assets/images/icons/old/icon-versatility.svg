@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- УНИВЕРСАЛЬНОСТЬ -->
+  <g id="icon-versatility">
+    <path class="animate-path" d="M10 15H50V45H10V15Z" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M20 15V45" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M40 15V45" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M10 25H50" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M10 35H50" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-fill" d="M10 15H50V45H10V15Z" fill="#00BA00" fill-opacity="0.1"/>
+    <circle class="animate-path" cx="30" cy="30" r="5" fill="none" stroke="#00BA00" stroke-width="2"/>
+  </g>
+</svg>

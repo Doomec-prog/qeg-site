@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q ENGINEERING - Эффективные решения для горнорудных проектов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/advantages.css">
+    <link rel="stylesheet" href="assets/css/solutions.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+</head>
+<body class="loading">
+    <!-- Прелоадер с видео -->
+    <div id="preloader">
+        <video id="preloader-video" autoplay muted playsinline>
+            <source src="assets/videos/zastavka.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- Хедер -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="assets/images/q-engineering-logo.png" alt="Q ENGINEERING">
+                <span class="logo-text">ENGINEERING</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Проекты</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link">Команда</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+                
+                <a href="#contacts" class="btn">Связаться</a>
+                
+                <div class="lang-switch">
+                    <button class="lang-btn active">RU</button>
+                    <span>/</span>
+                    <button class="lang-btn">EN</button>
+                </div>
+            </nav>
+            
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Главный баннер -->
+    <section class="hero">
+        <img src="assets/images/hero-bg.jpg" alt="Горнодобывающая промышленность" class="hero-bg">
+        
+        <div class="geometric-elements"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ РАЗВИТИЯ ГОРНОРУДНЫХ ПРОЕКТОВ</h1>
+                <p class="hero-text">Мы предлагаем комплексные решения от начала до конца в горнодобывающем секторе, обеспечивая значимые результаты для наших клиентов.</p>
+                <a href="#services" class="btn hero-btn">Узнать больше</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Прокрутите вниз</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+    
+    <!-- Направления деятельности -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Направления деятельности</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 class="service-title">Геология</h3>
+                    <p class="service-text">Комплексные геологоразведочные работы, моделирование месторождений и оценка запасов полезных ископаемых.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3 class="service-title">Горные работы</h3>
+                    <p class="service-text">Проектирование и оптимизация горных работ, внедрение современных технологий добычи и транспортировки.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="service-title">Перерабатывающие комплексы</h3>
+                    <p class="service-text">Разработка и модернизация обогатительных фабрик, внедрение эффективных технологических схем.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="service-title">Автоматизация производства</h3>
+                    <p class="service-text">Внедрение автоматизированных систем управления технологическими процессами, цифровизация производства.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Наши решения -->
+    <section class="solutions">
+        <div class="container">
+            <h2 class="solutions-title">НАШИ РЕШЕНИЯ</h2>
+            
+            <div class="solutions-grid">
+                <!-- Карточка 1 - Наши технологии -->
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                          <g id="icon-gear">
+                            <circle cx="40" cy="40" r="20" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M40 20V15M40 65V60M60 40H65M15 40H20M54.14 25.86L57.07 22.93M22.93 57.07L25.86 54.14M54.14 54.14L57.07 57.07M22.93 22.93L25.86 25.86" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M40 30C34.48 30 30 34.48 30 40C30 45.52 34.48 50 40 50C45.52 50 50 45.52 50 40C50 34.48 45.52 30 40 30Z" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M40 10L43 15H37L40 10Z" fill="#00BA00"/>
+                            <path d="M40 70L43 65H37L40 70Z" fill="#00BA00"/>
+                            <path d="M10 40L15 43V37L10 40Z" fill="#00BA00"/>
+                            <path d="M70 40L65 43V37L70 40Z" fill="#00BA00"/>
+                            <path d="M18.93 18.93L24.14 21.86L20.86 25.14L18.93 18.93Z" fill="#00BA00"/>
+                            <path d="M61.07 61.07L55.86 58.14L59.14 54.86L61.07 61.07Z" fill="#00BA00"/>
+                            <path d="M18.93 61.07L21.86 55.86L25.14 59.14L18.93 61.07Z" fill="#00BA00"/>
+                            <path d="M61.07 18.93L58.14 24.14L54.86 20.86L61.07 18.93Z" fill="#00BA00"/>
+                          </g>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">Наши технологии</h3>
+                    <p class="solution-text">QEngineering занимается разработкой передовых технологий обогащения и переработки полезных ископаемых.</p>
+                    <a href="#" class="solution-btn">
+                        Подробнее
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Карточка 2 - Цифровизация -->
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                          <g id="icon-vr">
+                            <path d="M15 30H65V50H15V30Z" fill="none" stroke="#00BA00" stroke-width="2" rx="5" ry="5"/>
+                            <path d="M15 40H65" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M40 30V50" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M20 50C20 55 25 60 30 60C35 60 40 55 40 50" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M60 50C60 55 55 60 50 60C45 60 40 55 40 50" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M25 40C27.7614 40 30 37.7614 30 35C30 32.2386 27.7614 30 25 30" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M55 40C52.2386 40 50 37.7614 50 35C50 32.2386 52.2386 30 55 30" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M15 30H65V50H15V30Z" fill="#00BA00" fill-opacity="0.1"/>
+                          </g>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">Цифровизация</h3>
+                    <p class="solution-text">Мы используем VR/AR, цифровые двойники, автоматизацию — вы можете наблюдать за предприятием из любой точки мира.</p>
+                    <a href="#" class="solution-btn">
+                        Подробнее
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Наши преимущества -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="advantages-title">Наши преимущества</h2>
+            
+            <div class="advantages-grid">
+                <!-- Карточка 1 -->
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                          <g id="icon-profitable">
+                            <path d="M30 10L50 20V40L30 50L10 40V20L30 10Z" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 10V30M30 30L50 20M30 30L10 20" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 10L50 20V40L30 50L10 40V20L30 10Z" fill="#00BA00" fill-opacity="0.1"/>
+                            <path d="M25 35L35 25M25 25L35 35" fill="none" stroke="#00BA00" stroke-width="2"/>
+                          </g>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">ВЫГОДНЫЕ РЕШЕНИЯ</h3>
+                    <p class="advantage-text">Подбираем проектные решения, которые экономят ресурсы и приносят максимум результата.</p>
+                </div>
+                
+                <!-- Карточка 2 -->
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                          <g id="icon-specialists">
+                            <circle cx="30" cy="20" r="10" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M15 50C15 42.268 21.268 36 29 36H31C38.732 36 45 42.268 45 50" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 20m-10 0a10 10 0 1 0 20 0a10 10 0 1 0 -20 0" fill="#00BA00" fill-opacity="0.1"/>
+                            <path d="M30 25L30 15M25 20L35 20" fill="none" stroke="#00BA00" stroke-width="2"/>
+                          </g>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">ЛУЧШИЕ СПЕЦИАЛИСТЫ</h3>
+                    <p class="advantage-text">В нашей команде — опытные инженеры и эксперты с реальным опытом работы в отрасли.</p>
+                </div>
+                
+                <!-- Карточка 3 -->
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                          <g id="icon-technologies">
+                            <path d="M15 45L15 15L45 15L45 45L15 45Z" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M20 25L25 30L20 35M30 25L35 30L30 35" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M15 35L45 35" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M15 15L45 15L45 45L15 45L15 15Z" fill="#00BA00" fill-opacity="0.1"/>
+                          </g>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">ПЕРЕДОВЫЕ ТЕХНОЛОГИИ</h3>
+                    <p class="advantage-text">Внедряем современные цифровые инструменты и инженерные решения.</p>
+                </div>
+                
+                <!-- Карточка 4 -->
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                          <g id="icon-flexibility">
+                            <path d="M30 10C18.954 10 10 18.954 10 30C10 41.046 18.954 50 30 50" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 50C41.046 50 50 41.046 50 30C50 18.954 41.046 10 30 10" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 20C24.477 20 20 24.477 20 30C20 35.523 24.477 40 30 40" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 40C35.523 40 40 35.523 40 30C40 24.477 35.523 20 30 20" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 10C18.954 10 10 18.954 10 30C10 41.046 18.954 50 30 50C41.046 50 50 41.046 50 30C50 18.954 41.046 10 30 10Z" fill="#00BA00" fill-opacity="0.1"/>
+                          </g>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">ГИБКОСТЬ</h3>
+                    <p class="advantage-text">Подстраиваемся под специфику каждого проекта — от задач до сроков.</p>
+                </div>
+                
+                <!-- Карточка 5 -->
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                          <g id="icon-speed">
+                            <circle cx="30" cy="30" r="20" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 20V30L38 38" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 10V15M30 45V50M10 30H15M45 30H50M16.36 16.36L19.9 19.9M40.1 40.1L43.64 43.64M16.36 43.64L19.9 40.1M40.1 19.9L43.64 16.36" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M30 30m-20 0a20 20 0 1 0 40 0a20 20 0 1 0 -40 0" fill="#00BA00" fill-opacity="0.1"/>
+                          </g>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">СКОРОСТЬ</h3>
+                    <p class="advantage-text">Работаем слаженно и оперативно — сложные этапы выполняем в сжатые сроки.</p>
+                </div>
+                
+                <!-- Карточка 6 -->
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                          <g id="icon-versatility">
+                            <path d="M10 15H50V45H10V15Z" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M20 15V45" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M40 15V45" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M10 25H50" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M10 35H50" fill="none" stroke="#00BA00" stroke-width="2"/>
+                            <path d="M10 15H50V45H10V15Z" fill="#00BA00" fill-opacity="0.1"/>
+                            <circle cx="30" cy="30" r="5" fill="none" stroke="#00BA00" stroke-width="2"/>
+                          </g>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">УНИВЕРСАЛЬНОСТЬ</h3>
+                    <p class="advantage-text">Присоединяемся к проекту на любом этапе и берём на себя всё необходимое.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- О компании -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>О компании</h2>
+                    <p>Q Engineering — признанный лидер в реализации промышленных проектов. Мы работаем с клиентами для решения самых сложных задач горнодобывающей отрасли и создаём наследие для будущих поколений.</p>
+                    <p>Наша команда состоит из высококвалифицированных специалистов с многолетним опытом работы в горнодобывающей промышленности. Мы применяем инновационные подходы и современные технологии для достижения максимальной эффективности проектов.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="150">0</span>
+                            <span class="stat-text">Реализованных проектов</span>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="11">0</span>
+                            <span class="stat-text">Лет успешной работы</span>
+                        </div>
+                        
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="8">0</span>
+                            <span class="stat-text">Стран присутствия</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-btn-container">
+                        <a href="#" class="btn">Подробнее о компании</a>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="assets/images/about-img.jpg" alt="Q Engineering команда">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Проекты -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Новости и проекты</h2>
+            
+            <div class="projects-slider">
+                <div class="projects-track">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-1.jpg" alt="Модернизация оборудования">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Модернизация оборудования корпуса среднего дробления</h3>
+                            <p class="project-description">Комплексная модернизация оборудования с внедрением современных технологий дробления.</p>
+                            <div class="project-meta">
+                                <span>Партнер: ООО "Нерюнгри-Металлик"</span>
+                                <span>Якутия</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-2.jpg" alt="Модернизация мельниц">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Модернизация мельниц</h3>
+                            <p class="project-description">Повышение эффективности работы мельниц с применением инновационных технологий.</p>
+                            <div class="project-meta">
+                                <span>Партнер: АО "Михайловский ГОК"</span>
+                                <span>Курская область</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-3.jpg" alt="Реконструкция корпуса фильтрации">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Реконструкция корпуса фильтрации</h3>
+                            <p class="project-description">Полная реконструкция корпуса фильтрации с внедрением современного оборудования.</p>
+                            <div class="project-meta">
+                                <span>Партнер: ПАО "Северсталь"</span>
+                                <span>Вологодская область</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-4.jpg" alt="Комплексные решения">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Комплексные решения на Кольском полуострове</h3>
+                            <p class="project-description">Разработка и внедрение комплексных решений для горнодобывающих предприятий.</p>
+                            <div class="project-meta">
+                                <span>Партнер: АО "Кольская ГМК"</span>
+                                <span>Мурманская область</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#" class="btn">Все проекты</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Интерактивная карта -->
+    <section class="map-section">
+        <div class="container">
+            <h2>География проектов</h2>
+            
+            <div class="map-container">
+                <div id="interactive-map"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Карьера -->
+    <section id="team" class="career">
+        <img src="assets/images/career-bg.jpg" alt="Команда Q Engineering" class="career-bg">
+        
+        <div class="container">
+            <div class="career-container">
+                <h2 class="career-title">В Q ENGINEERING НАС ОБЪЕДИНЯЕТ ОБЩАЯ ЦЕЛЬ — СОЗДАВАТЬ ЛУЧШИЙ МИР</h2>
+                <p class="career-text">Мы всегда в поиске талантливых специалистов, готовых присоединиться к нашей команде и внести свой вклад в развитие горнодобывающей отрасли.</p>
+                <a href="#" class="btn">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Галерея -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Галерея</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-1.jpg" alt="Карьер">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Открытый карьер в Якутии</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-2.jpg" alt="Сотрудники">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Наши специалисты на объекте</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-3.jpg" alt="Оборудование">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Современное оборудование</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-4.jpg" alt="Производство">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">Производственный процесс</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Футер -->
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="assets/images/q-engineering-logo.png" alt="Q ENGINEERING">
+                    <span class="logo-text">ENGINEERING</span>
+                    <p class="footer-text">Эффективные решения для развития горнорудных проектов. Комплексный подход к реализации задач любой сложности.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Навигация</h4>
+                    <div class="footer-nav">
+                        <a href="#about">О нас</a>
+                        <a href="#services">Услуги</a>
+                        <a href="#projects">Проекты</a>
+                        <a href="#team">Команда</a>
+                        <a href="#contacts">Контакты</a>
+                    </div>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-title">Контакты</h4>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">123456, Москва, ул. Примерная, д. 10, офис 500</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">+7 (495) 123-45-67</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">info@q-engineering.ru</div>
+                    </div>
+                </div>
+                
+                <div class="footer-subscribe">
+                    <h4 class="footer-title">Подписаться на новости</h4>
+                    <p class="footer-text">Будьте в курсе последних новостей и проектов компании</p>
+                    <form class="subscribe-form">
+                        <input type="email" class="subscribe-input" placeholder="Ваш email">
+                        <button type="submit" class="subscribe-btn">Подписаться</button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-telegram social-icon"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-vk social-icon"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube social-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">© 2025 Q ENGINEERING. Все права защищены.</div>
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">Политика конфиденциальности</a>
+                    <a href="#" class="legal-link">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script src="assets/js/preloader.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/advantages.js"></script>
+    <script src="assets/js/solutions.js"></script>
+    <script src="assets/js/partners.js"></script>
+</body>
+</html>
+
+
+    <!-- Партнеры -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="partners-title">ПАРТНЁРЫ</h2>
+            <div class="partners-carousel">
+                <div class="carousel-track">
+                    <img src="assets/images/partners/logo_1.png" alt="Партнер 1">
+                    <img src="assets/images/partners/logo_11.png" alt="Партнер 11">
+                    <img src="assets/images/partners/logo_13.png" alt="Партнер 13">
+                    <img src="assets/images/partners/logo_14.png" alt="Партнер 14">
+                    <img src="assets/images/partners/logo_15.png" alt="Партнер 15">
+                    <img src="assets/images/partners/logo_16.png" alt="Партнер 16">
+                    <img src="assets/images/partners/logo_17.png" alt="Партнер 17">
+                    <img src="assets/images/partners/logo_18.png" alt="Партнер 18">
+                    <img src="assets/images/partners/logo_2.png" alt="Партнер 2">
+                    <img src="assets/images/partners/logo_21.png" alt="Партнер 21">
+                    <img src="assets/images/partners/logo_22.png" alt="Партнер 22">
+                    <img src="assets/images/partners/logo_3.png" alt="Партнер 3">
+                    <img src="assets/images/partners/logo_4.png" alt="Партнер 4">
+                    <img src="assets/images/partners/logo_5.png" alt="Партнер 5">
+                    <img src="assets/images/partners/logo_6.png" alt="Партнер 6">
+                    <img src="assets/images/partners/logo_7.png" alt="Партнер 7">
+                    <img src="assets/images/partners/logo_9.png" alt="Партнер 9">
+                    <img src="assets/images/partners/rosatom.png" alt="Росатом">
+                </div>
+                <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+

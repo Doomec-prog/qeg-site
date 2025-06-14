@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Иконка шестеренки для "Наши технологии" -->
+  <g id="icon-gear">
+    <circle class="animate-path" cx="40" cy="40" r="20" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M40 20V15M40 65V60M60 40H65M15 40H20M54.14 25.86L57.07 22.93M22.93 57.07L25.86 54.14M54.14 54.14L57.07 57.07M22.93 22.93L25.86 25.86" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M40 30C34.48 30 30 34.48 30 40C30 45.52 34.48 50 40 50C45.52 50 50 45.52 50 40C50 34.48 45.52 30 40 30Z" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-teeth" d="M40 10L43 15H37L40 10Z" fill="#00BA00"/>
+    <path class="animate-teeth" d="M40 70L43 65H37L40 70Z" fill="#00BA00"/>
+    <path class="animate-teeth" d="M10 40L15 43V37L10 40Z" fill="#00BA00"/>
+    <path class="animate-teeth" d="M70 40L65 43V37L70 40Z" fill="#00BA00"/>
+    <path class="animate-teeth" d="M18.93 18.93L24.14 21.86L20.86 25.14L18.93 18.93Z" fill="#00BA00"/>
+    <path class="animate-teeth" d="M61.07 61.07L55.86 58.14L59.14 54.86L61.07 61.07Z" fill="#00BA00"/>
+    <path class="animate-teeth" d="M18.93 61.07L21.86 55.86L25.14 59.14L18.93 61.07Z" fill="#00BA00"/>
+    <path class="animate-teeth" d="M61.07 18.93L58.14 24.14L54.86 20.86L61.07 18.93Z" fill="#00BA00"/>
+  </g>
+</svg>

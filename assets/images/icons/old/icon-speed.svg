@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- СКОРОСТЬ -->
+  <g id="icon-speed">
+    <circle class="animate-path" cx="30" cy="30" r="20" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M30 30L40 20" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-path" d="M30 10V15M45 15L42 18M50 30H45M15 30H10M18 18L15 15" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <circle class="animate-path" cx="30" cy="30" r="3" fill="none" stroke="#00BA00" stroke-width="2"/>
+    <path class="animate-fill" d="M30 30m-20 0a20 20 0 1 0 40 0a20 20 0 1 0 -40 0" fill="#00BA00" fill-opacity="0.1"/>
+  </g>
+</svg>

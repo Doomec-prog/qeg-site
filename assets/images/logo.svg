@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .logo-q {
+      fill: #00BA00;
+      filter: drop-shadow(0 0 5px rgba(0, 186, 0, 0.7));
+    }
+    .logo-text {
+      fill: #EAE9E9;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    @keyframes glow {
+      0% { filter: drop-shadow(0 0 3px rgba(0, 186, 0, 0.5)); }
+      50% { filter: drop-shadow(0 0 8px rgba(0, 186, 0, 0.8)); }
+      100% { filter: drop-shadow(0 0 3px rgba(0, 186, 0, 0.5)); }
+    }
+    .logo-q {
+      animation: glow 3s infinite;
+    }
+  </style>
+  
+  <!-- Q Symbol -->
+  <g class="logo-q">
+    <polygon points="50,30 100,30 150,80 150,130 100,180 50,130 50,80 100,130 100,80 50,30" />
+  </g>
+  
+  <!-- ENGINEERING Text -->
+  <text x="100" y="220" class="logo-text" text-anchor="middle" font-size="24">ENGINEERING</text>
+</svg>
