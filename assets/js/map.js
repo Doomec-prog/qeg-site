@@ -101,4 +101,5 @@ function initMapInteraction() {
     document.head.appendChild(style);
 }
 
-// Заменяем старую функцию initMapInteraction в main.js
+// Автоматически инициализируем карту после загрузки DOM
+document.addEventListener('DOMContentLoaded', initMapInteraction);
