@@ -84,6 +84,12 @@
   stroke-width: 2;
 }
 
+.solution-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .solution-title {
   font-family: 'Philosopher', serif;
   font-weight: 700;
