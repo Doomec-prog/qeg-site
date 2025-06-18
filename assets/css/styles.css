@@ -193,7 +193,7 @@ p {
 }
 
 .logo img {
-  height: 40px;
+  height: 48px;
   filter: drop-shadow(0 0 5px var(--poison-green-40));
   transition: var(--transition-fast);
 }
@@ -915,13 +915,14 @@ p {
 .footer-logo {
   grid-column: 1 / 2;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   gap: 8px;
+  text-align: center;
 }
 
 .footer-logo img {
-  max-height: 32px;
+  max-height: 40px;
   filter: drop-shadow(0 0 5px var(--poison-green-40));
 }
 
@@ -967,7 +968,7 @@ p {
 }
 
 .footer-nav a {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   transition: var(--transition-fast);
 }
 
