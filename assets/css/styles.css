@@ -542,37 +542,6 @@ p {
   transition: var(--transition-slow);
 }
 
-.about-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.stat-item {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.stat-number {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: var(--poison-green);
-  margin-bottom: 10px;
-  display: block;
-  font-family: 'Philosopher', serif;
-  line-height: 1;
-}
-
-.stat-text {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  display: block;
-  margin-top: 5px;
-}
 
 /* Проекты */
 .projects {
@@ -1252,9 +1221,6 @@ p {
     font-size: 2.5rem;
   }
   
-  .about-stats {
-    grid-template-columns: repeat(1, 1fr);
-  }
   
   .project-card {
     flex: 0 0 100%;
