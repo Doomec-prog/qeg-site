@@ -167,54 +167,19 @@ function initHeroAnimation() {
 function initScrollAnimations() {
     // Получаем все элементы, которые нужно анимировать
     const animatedElements = document.querySelectorAll('.service-card, .about-content, .about-image, h2');
-    
-    // Создаем Observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate');
-                
-                // Если это счетчик, запускаем анимацию счетчика
-                if (entry.target.classList.contains('stat-number')) {
-                    animateCounter(entry.target);
-                }
             }
         });
     }, {
         threshold: 0.2
     });
-    
-    // Наблюдаем за элементами
+
     animatedElements.forEach(element => {
         observer.observe(element);
     });
-    
-    // Анимация счетчиков
-    const counters = document.querySelectorAll('.stat-number');
-    
-    counters.forEach(counter => {
-        observer.observe(counter);
-    });
-    
-    function animateCounter(counter) {
-        const target = parseInt(counter.getAttribute('data-target'));
-        const duration = 2000;
-        const step = target / (duration / 16);
-        let current = 0;
-        
-        const updateCounter = () => {
-            current += step;
-            
-            if (current < target) {
-                counter.textContent = Math.floor(current);
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.textContent = target;
-            }
-        };
-        
-        updateCounter();
-    }
 }
 
 // Функция для инициализации карточек услуг
