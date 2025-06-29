@@ -105,32 +105,6 @@
   flex-grow: 1;
 }
 
-.solution-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 25px;
-  border: 2px solid #00BA00;
-  border-radius: 30px;
-  color: #00BA00;
-  font-family: 'Futura PT', sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin-top: auto;
-}
-
-.solution-btn svg {
-  margin-left: 8px;
-  transition: transform 0.3s ease;
-}
-
-
-
-.solution-btn:hover svg {
-  transform: translateX(5px);
-}
 
 /* Адаптивность */
 @media (max-width: 992px) {

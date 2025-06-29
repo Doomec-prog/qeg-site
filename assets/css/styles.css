@@ -518,12 +518,13 @@ p {
 }
 
 
-.service-btn:hover,
-.solution-btn:hover {
+/* Final hover styles for the unified button class */
+
+.service-btn:hover {
   background-color: var(--poison-green);
   color: var(--light-bg);
   transform: scale(1.05);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 186, 0, 0.25);
 }
 
 .service-btn:hover svg {
