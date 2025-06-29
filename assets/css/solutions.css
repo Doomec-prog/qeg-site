@@ -126,12 +126,7 @@
   transition: transform 0.3s ease;
 }
 
-.solution-btn:hover {
-  background-color: #00BA00;
-  color: #fff;
-  transform: scale(1.05);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-}
+
 
 .solution-btn:hover svg {
   transform: translateX(5px);
