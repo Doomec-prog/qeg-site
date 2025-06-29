@@ -684,7 +684,6 @@ p {
 }
 
 .custom-map-marker .leaflet-popup-content h4 {
-  font-family: 'Futura PT', sans-serif;
   color: var(--poison-green);
   margin-bottom: 5px;
 }
