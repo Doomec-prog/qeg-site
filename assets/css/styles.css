@@ -74,7 +74,7 @@ img {
 
 /* Типографика */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Philosopher', serif;
+  font-family: 'Futura PT', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -199,7 +199,7 @@ p {
 }
 
 .logo-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Futura PT', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
@@ -684,7 +684,7 @@ p {
 }
 
 .custom-map-marker .leaflet-popup-content h4 {
-  font-family: 'Philosopher', serif;
+  font-family: 'Futura PT', sans-serif;
   color: var(--poison-green);
   margin-bottom: 5px;
 }
@@ -896,7 +896,7 @@ p {
 }
 
 .footer-logo .logo-text {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Futura PT', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
