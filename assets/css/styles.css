@@ -518,9 +518,10 @@ p {
 }
 
 
-.service-btn:hover {
+.service-btn:hover,
+.solution-btn:hover {
   background-color: var(--poison-green);
-  color: #fff;
+  color: var(--light-bg);
   transform: scale(1.05);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
