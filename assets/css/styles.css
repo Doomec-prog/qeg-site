@@ -580,105 +580,6 @@ p {
 }
 
 
-/* Проекты */
-.projects {
-  padding: var(--section-padding);
-  background-color: var(--light-bg);
-  position: relative;
-}
-
-.projects-slider {
-  position: relative;
-  margin-top: 50px;
-  overflow: hidden;
-}
-
-.projects-track {
-  display: flex;
-  transition: var(--transition-medium);
-}
-
-.project-card {
-  flex: 0 0 calc(33.333% - 20px);
-  margin-right: 30px;
-  background-color: var(--light-gray-bg);
-  border-radius: 5px;
-  overflow: hidden;
-  border: 1px solid rgba(0, 186, 0, 0.2);
-  transition: var(--transition-medium);
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 0 15px var(--poison-green-20);
-  border-color: var(--poison-green);
-}
-
-.project-image {
-  height: 200px;
-  overflow: hidden;
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: var(--transition-medium);
-}
-
-.project-card:hover .project-image img {
-  transform: scale(1.1);
-}
-
-.project-content {
-  padding: 20px;
-}
-
-.project-title {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.project-description {
-  font-size: 0.9rem;
-  margin-bottom: 15px;
-  color: var(--medium-text);
-}
-
-.project-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  color: var(--medium-text);
-}
-
-.slider-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.slider-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--light-gray-bg);
-  border: 1px solid var(--poison-green-40);
-  color: var(--light-text);
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin: 0 10px;
-  transition: var(--transition-fast);
-}
-
-.slider-btn:hover {
-  background-color: var(--poison-green);
-  color: var(--light-bg);
-  box-shadow: var(--neon-glow);
-}
 
 /* Карта */
 .map-section {
@@ -1414,3 +1315,62 @@ p {
 }
 
 
+/* --- CTA Section --- */
+.cta-section {
+  position: relative;
+  padding: 120px 0;
+  background-image: url('../images/mountains-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--poison-green);
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 45px;
+  border: 2px solid var(--poison-green);
+  background-color: transparent;
+  color: var(--moss);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.cta-button .cta-icon {
+  height: 32px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.cta-button:hover {
+  background-color: var(--poison-green);
+  color: var(--light-bg);
+  box-shadow: var(--neon-glow);
+}
