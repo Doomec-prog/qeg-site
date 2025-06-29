@@ -495,6 +495,37 @@ p {
   z-index: 1;
 }
 
+/* Кнопка в карточках направлений */
+.service-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  border: 2px solid var(--poison-green);
+  border-radius: 30px;
+  color: var(--poison-green);
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.service-btn svg {
+  margin-left: 8px;
+  transition: transform var(--transition-fast);
+}
+
+.service-btn:hover {
+  background-color: var(--poison-green);
+  color: #fff;
+}
+
+.service-btn:hover svg {
+  transform: translateX(5px);
+}
+
 /* О компании */
 .about {
   padding: var(--section-padding);
