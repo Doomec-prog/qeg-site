@@ -1348,6 +1348,11 @@ p {
   color: #fff;
 }
 
+/* Применяем собственный фон для секции "projects" */
+#projects {
+  background-image: url('../images/call.webp');
+}
+
 .cta-section::before {
   content: '';
   position: absolute;
