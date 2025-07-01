@@ -262,6 +262,15 @@ p {
   margin-left: 20px;
 }
 
+/* Кнопка "Связаться" */
+.desktop-contact-btn {
+  display: inline-block;
+}
+
+.mobile-contact-btn {
+  display: none;
+}
+
 .lang-btn {
   padding: 5px 8px;
   font-size: 0.9rem;
@@ -1140,6 +1149,19 @@ p {
   .nav-item {
     margin: 10px 0;
     text-align: center;
+  }
+
+  .desktop-contact-btn {
+    display: none;
+  }
+
+  .mobile-contact-btn {
+    display: block;
+    text-align: center;
+  }
+
+  .mobile-contact-btn .btn {
+    margin: 10px auto;
   }
   
   .mobile-menu-btn {
