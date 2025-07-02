@@ -209,7 +209,7 @@ p {
 
 /* Increase logo text size and weight in the header */
 .header .logo-text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -1398,7 +1398,7 @@ p {
 
 .cta-button .cta-icon {
   height: 60px;
-  width: 60px;
+  width: auto;
   margin-right: 15px;
 }
 
