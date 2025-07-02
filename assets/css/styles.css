@@ -207,6 +207,12 @@ p {
   font-style: normal;
 }
 
+/* Increase logo text size and weight in the header */
+.header .logo-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .logo:hover img {
   filter: drop-shadow(0 0 8px var(--poison-green));
 }
@@ -1391,8 +1397,8 @@ p {
 }
 
 .cta-button .cta-icon {
-  height: 32px;
-  width: auto;
+  height: 60px;
+  width: 60px;
   margin-right: 15px;
 }
 
