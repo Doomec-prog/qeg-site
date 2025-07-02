@@ -1402,13 +1402,13 @@ p {
   box-shadow: var(--neon-glow);
 }
 
-/* Neon Glare Hover Effect */
+/* Neon Glare Hover Effect (Corrected) */
 .neon-glare-effect {
   position: relative;
   overflow: hidden;
 }
 
-.neon-glare-effect::before {
+.neon-glare-effect::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1416,14 +1416,15 @@ p {
   width: 100%;
   height: 100%;
   background: linear-gradient(100deg, 
-    rgba(0, 186, 0, 0) 20%, 
+    transparent 20%, 
     rgba(0, 186, 0, 0.4) 50%, 
-    rgba(0, 186, 0, 0) 80%
+    transparent 80%
   );
   transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   pointer-events: none;
 }
 
-.neon-glare-effect:hover::before {
+.neon-glare-effect:hover::after {
   transform: translateX(100%);
 }
+
