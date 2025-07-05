@@ -33,6 +33,25 @@
   --transition-medium: all 0.5s ease;
   --transition-slow: all 0.8s ease;
 }
+/* Dark Theme Variables */
+html.dark-mode {
+  --light-bg: #121212;
+  --light-gray-bg: #1E1E1E;
+  --medium-light-gray: #333333;
+  --light-text: #E0E0E0;
+  --medium-text: #A0A0A0;
+
+  --neon-glow: 0 0 10px var(--poison-green-60), 0 0 20px var(--poison-green-40);
+}
+
+html.dark-mode .service-card {
+    border-color: rgba(0, 186, 0, 0.4);
+}
+
+html.dark-mode .hero::before {
+    background: linear-gradient(135deg, rgba(0, 55, 2, 0.6), rgba(18, 18, 18, 0.8));
+}
+
 
 /* Сброс стилей */
 * {
@@ -1451,3 +1470,41 @@ p {
   filter: blur(0);
   transform: scale(1);
 }
+
+/* Theme Switcher Button */
+.theme-btn {
+    background: transparent;
+    border: 2px solid var(--poison-green-40);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--medium-text);
+    transition: var(--transition-fast);
+    margin-right: 20px;
+}
+
+.theme-btn:hover {
+    color: var(--poison-green);
+    border-color: var(--poison-green);
+}
+
+.theme-btn .sun-icon {
+    display: none; /* Hidden by default */
+}
+.theme-btn .moon-icon {
+    display: block; /* Shown by default */
+}
+
+/* Icon display for dark mode */
+html.dark-mode .theme-btn .sun-icon {
+    display: block;
+}
+html.dark-mode .theme-btn .moon-icon {
+    display: none;
+}
+
